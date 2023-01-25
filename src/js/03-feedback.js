@@ -24,11 +24,11 @@ function onFormChange(event) {
 function onFormSubmit(event) {
   event.preventDefault();
 
+  console.log(currentFormDataToObj());
+
   event.currentTarget.reset();
 
   localStorage.removeItem("feedback-form-state");
-
-  console.log(currentFormDataToObj());
 }
 
 function currentFormDataToObj() {
